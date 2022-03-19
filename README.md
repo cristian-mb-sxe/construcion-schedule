@@ -21,7 +21,7 @@ La motivación principal de este módulo de Odoo es agilizar y optimizar ciertos
 
 ## Codificación y estructura
 
-Mi módulo se compone de un total de 5 modelos. Estos están relacionados entre sí con relaciones Many2many, Many2one y One2many y también están compuestos por fields calculados y de tipo Date. Por último el modelo **"Employee"** hereda por delegación de **res.partner**, creando una tabla nueva con los campos nuevos definidos por mí, y cumpliendo así el último de los requisitos. En la siguiente imagen podemos ver de una forma más visual la estructura de estos:
+Mi módulo se compone de un total de 5 modelos. Estos están relacionados entre sí con **relaciones** Many2many, Many2one y One2many y también están compuestos por **fields** calculados y de tipo Date. Por último el modelo _Employee_ hereda por delegación de **res.partner**, creando una tabla nueva con los campos nuevos definidos por mí, y cumpliendo así el último de los requisitos. En la siguiente imagen podemos ver de una forma más visual la estructura de estos:
 
 
 <img src="https://user-images.githubusercontent.com/100152588/159137899-4c763c38-b490-4955-a65a-e93afcf0d98b.png"/>
