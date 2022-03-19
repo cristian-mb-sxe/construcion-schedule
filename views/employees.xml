@@ -1,0 +1,41 @@
+<odoo>
+    <!-- Tree view & Form view for EMPLOYEES -->
+
+    <record model="ir.ui.view" id="view_employee_form">
+      <field name="name">schedule.employee.form</field>
+      <field name="model">schedule.employee</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="partner_id" string='Name'/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_employee_tree">
+      <field name="name">schedule.employee.tree</field>
+      <field name="model">schedule.employee</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="partner_id" string='Name'/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- action opening view of EMPLOYEES -->
+
+    <record id="action_employees" model="ir.actions.act_window"> 
+      <field name="name">Employees</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">schedule.employee</field> 
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu Category -->
+
+    <menuitem id="schedule_employees" name="Employees" parent="schedule_root" action="action_employees" sequence="10"/> 
+
+</odoo>

@@ -1,0 +1,52 @@
+<odoo>
+    <!-- Tree view & Form view for MATERIALS -->
+
+    <record model="ir.ui.view" id="schedule_material_tree">
+      <field name="name">schedule.material.tree</field>
+      <field name="model">schedule.material</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="quantity"/>
+          <field name="cost" widget='monetary'/>
+          <field name="total_cost" widget='monetary'/>
+          <field name="currency_id"/>          
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="schedule_material_form">
+      <field name="name">schedule.material.form</field>
+      <field name="model">schedule.material</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+                <field name="name"/>
+                <field name="provider"/>
+            </group>
+            <group>
+              <field name="quantity"/>
+              <field name="currency_id"/>
+              <field name="cost" widget='monetary'/>
+              <field name="total_cost" widget='monetary'/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- action opening view of MATERIALS -->
+
+    <record id="action_materials" model="ir.actions.act_window"> 
+      <field name="name">Materials</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">schedule.material</field> 
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu Category -->
+    
+    <menuitem id="schedule_materials" name="Materials" parent="schedule_root" action="action_materials" sequence="10"/>
+
+</odoo>

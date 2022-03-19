@@ -1,0 +1,43 @@
+<odoo>
+    <!-- Tree view & Form view for MACHINERY -->
+
+    <record model="ir.ui.view" id="schedule_machinery_tree">
+      <field name="name">schedule.machinery.tree</field>
+      <field name="model">schedule.machinery</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="schedule_machinery_form">
+      <field name="name">schedule.machinery.form</field>
+      <field name="model">schedule.machinery</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+                <field name="name"/>
+                <field name="description"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- action opening view of MACHINERY -->
+
+    <record id="action_machinery" model="ir.actions.act_window"> 
+      <field name="name">Machinery</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">schedule.machinery</field> 
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu Category -->
+    
+    <menuitem id="schedule_machinery" name="Machinery" parent="schedule_root" action="action_machinery" sequence="10"/>
+
+</odoo>

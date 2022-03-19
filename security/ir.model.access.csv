@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_schedule_employee,access.schedule.employee,model_schedule_employee,,1,1,1,1
+access_schedule_machinery,access.schedule.machinery,model_schedule_machinery,,1,1,1,1
+access_schedule_activity,access.schedule.activity,model_schedule_activity,,1,1,1,1
+access_schedule_material,access.schedule.material,model_schedule_material,,1,1,1,1
+access_schedule_construction,access.schedule.construction,model_schedule_construction,,1,1,1,1

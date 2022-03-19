@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+    <!-- Materials-->
+<!--
+    <record id="material1" model="schedule.material">
+      <field name="name">Cemento gris 32,5 LAFARGE 25 kg</field>
+      <field name="currency_id" ref="res.currency"/>
+      <field name="quantity">0</field>
+      <field name="cost">3,29</field>
+      <field name="provider">Leroy Merlin</field>
+    </record>
+
+    <!-- Machinery-->
+
+    <record id="id1" model="tutorial.example">
+      <field name="related_ids" eval="[
+          Command.create({
+              'name': 'My name',
+          }),
+          Command.create({
+              'name': 'Your name',
+          }),
+          Command.link(ref('model.xml_id')),
+      ]"/>
+    </record>
+  
+    <record id="machinery1" model="schedule.machinery">
+      <field name="name">Martillo pneumático</field>
+      <field name="description">Martillo pneumático para acondicionar el terreno antes de colorcar las plaquetas</field>
+    </record>
+
+    <record id="construction1" model="schedule.construction">
+      <field name="name">Obra Caldas de Reis</field>
+      <field name="deadline">23/06/2022</field>
+      <field name="activity_id">23/06/2022</field>
+      <field name="material_id">23/06/2022</field>
+    </record>
+-->
+    </data>
+</odoo>

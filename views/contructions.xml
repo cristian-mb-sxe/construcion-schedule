@@ -1,0 +1,83 @@
+<odoo>
+    <!-- Tree view & Form view for CONSTRUCTIONS -->
+
+    <record model="ir.ui.view" id="schedule_construction_tree">
+      <field name="name">schedule.construction.tree</field>
+      <field name="model">schedule.construction</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="deadline"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="schedule_construction_kanban">
+      <field name="name">schedule.construction.kanban</field>
+      <field name="model">schedule.construction</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="name"/>
+          <field name="deadline"/>
+          <field name="activities"/>
+          <field name="materials"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div t-attf-class="oe_kanban_global_click">
+                <div class="oe_kanban_details">
+                <ul>
+                  <li><strong class="o_kanban_record_title"><field name="name"/></strong></li>
+                  <li><field name="deadline"/></li>
+                  <li><field name="activities"/></li>
+                  <li><field name="materials"/></li>
+                </ul>                              
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="schedule_construction_form">
+      <field name="name">schedule.construction.form</field>
+      <field name="model">schedule.construction</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="name"/>
+                <field name="deadline"/>
+              </group>
+              <group>
+                <field name="activities"/>
+                <field name="materials"/>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views of CONSTRUCTIONS -->
+
+    <record id="action_constructions" model="ir.actions.act_window"> 
+      <field name="name">Construction Schedule</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">schedule.construction</field> 
+      <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+
+    <!-- Menu Root Item -->
+    <menuitem 
+      id="schedule_root"
+      name="Construction"
+      action="action_constructions"
+      sequence="10"/>
+
+    <!-- Menu Category -->
+    <menuitem id="schedule_constructions" name="Constructions" parent="schedule_root" action="action_constructions" sequence="10"/> 
+
+</odoo>
