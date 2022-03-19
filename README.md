@@ -49,7 +49,7 @@ Este repositorio tiene como carpeta raíz la propia carpeta del modulo, entonces
    ```sh
    cd /opt/odoo/src/OCB/addons
    
-   git clone https://github.com/cristian-mb-sxe/construction_schedule
+   git clone https://github.com/cristian-mb-sxe/construction-schedule
    ```
 2. Asegúrate de que la ruta figura en el archivo **odoo.conf**
    ```sh
