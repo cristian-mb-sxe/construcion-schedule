@@ -45,16 +45,16 @@
       <field name="arch" type="xml">
         <form>
           <sheet>
-            <group>
               <group>
                 <field name="name"/>
                 <field name="deadline"/>
               </group>
               <group>
-                <field name="activities"/>
-                <field name="materials"/>
+                <field name="activities"/>                
               </group>
-            </group>
+              <group>
+                <field name="materials" string="Materials"/>
+              </group>
           </sheet>
         </form>
       </field>
