@@ -3,10 +3,10 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#motivación,-objetivos-y-funcionalidad">Motivación, objetivos y funcionalidad</a></li>
-    <li><a href="#codificación-y-estructura">Codificación y estructura</a></li>
-    <li><a href="#contributing">Estado y futuras mejoras</a></li>
-    <li><a href="#contact">Instalación</a></li>
+    <li><a href="#motivation">Motivación, objetivos y funcionalidad</a></li>
+    <li><a href="#structure">Codificación y estructura</a></li>
+    <li><a href="#upgrades">Estado y futuras mejoras</a></li>
+    <li><a href="#instalation">Instalación</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -14,13 +14,13 @@
 
 
 ## Motivación, objetivos y funcionalidad
-
+<div id="motivation"></div>
 La motivación principal de este módulo de Odoo es agilizar y optimizar ciertos aspectos del trabajo de mi padre. Al ser encargado de obra, debe llevar un registro del material, personal, maquinaria, dietas y demás aspectos de su día a día, que anota en una agenda al acabar su jornada. Entonces me dí cuenta de que le podría ser de gran ayuda un módulo de Odoo vistoso e intuitivo, en lugar de una simple agenda. 
 
 
 
 ## Codificación y estructura
-
+<div id="structure"></div>
 Mi módulo se compone de un total de 5 modelos. Estos están relacionados entre sí con **relaciones** Many2many, Many2one y One2many y también están compuestos por **fields** calculados y de tipo Date. Por último el modelo _Employee_ hereda por delegación de **res.partner**, creando una tabla nueva con los campos nuevos definidos por mí, y cumpliendo así el último de los requisitos. En la siguiente imagen podemos ver de una forma más visual la estructura de estos:
 
 
@@ -31,7 +31,7 @@ Mi módulo se compone de un total de 5 modelos. Estos están relacionados entre 
 
 
 ## Estado y futuras mejoras
-
+<div id="upgrades"></div>
 El estado actual del módulo es bastante básico. Se compone de 2 tipos de views para cada modelo (tree y form view) y una kanban para las construcciones. Además, para ser un módulo totalmente funcional, tendría que añadir algún campo más a cada modelo para que no queden tan escuetos y añadir algún tipo de vista más visual. Por esto, algunos de los posibles cambios que en un futuro debería de cumplir mi módulo serían los siguientes: 
 
   * Añadir campos a los modelos para acabar de completarlos
@@ -42,7 +42,7 @@ El estado actual del módulo es bastante básico. Se compone de 2 tipos de views
 
 
 ## Instalación
-
+<div id="instalation"></div>
 Este repositorio tiene como carpeta raíz la propia carpeta del modulo, entonces solo es necesario clonar el repositorio en la carpeta que odoo asigna por defecto en el addons_path. Sigue los siguiente pasos para añadir este módulo a tu instacia de Odoo:
 
 1. Clonar el repositorio en la carpeta **/opt/odoo/src/OCB/addons** 
@@ -58,7 +58,7 @@ Este repositorio tiene como carpeta raíz la propia carpeta del modulo, entonces
    
    
 ## License
-
+<div id="license"></div>
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">Ir al principio</a>)</p>
