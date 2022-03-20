@@ -32,6 +32,11 @@
       <field name="type">ir.actions.act_window</field>
       <field name="res_model">schedule.employee</field> 
       <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+          Add your first employee
+        </p>
+      </field>
     </record>
 
     <!-- Menu Category -->

@@ -4,8 +4,8 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#motivación,-objetivos-y-funcionalidad">Motivación, objetivos y funcionalidad</a></li>
-    <li><a href="#roadmap">Codificación y estructura</a></li>
-    <li><a href="#contributing">Estado y mejoras futuras</a></li>
+    <li><a href="#codificación-y-estructura">Codificación y estructura</a></li>
+    <li><a href="#contributing">Estado y futuras mejoras</a></li>
     <li><a href="#contact">Instalación</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -30,7 +30,7 @@ Mi módulo se compone de un total de 5 modelos. Estos están relacionados entre 
 
 
 
-## Estado y mejoras futuras
+## Estado y futuras mejoras
 
 El estado actual del módulo es bastante básico. Se compone de 2 tipos de views para cada modelo (tree y form view) y una kanban para las construcciones. Además, para ser un módulo totalmente funcional, tendría que añadir algún campo más a cada modelo para que no queden tan escuetos y añadir algún tipo de vista más visual. Por esto, algunos de los posibles cambios que en un futuro debería de cumplir mi módulo serían los siguientes: 
 
