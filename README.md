@@ -1,15 +1,12 @@
 <div id="top"></div>
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#motivation">Motivación, objetivos y funcionalidad</a></li>
-    <li><a href="#structure">Codificación y estructura</a></li>
-    <li><a href="#upgrades">Estado y futuras mejoras</a></li>
-    <li><a href="#instalation">Instalación</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
+
+<ol>
+  <li><a href="#motivation">Motivación, objetivos y funcionalidad</a></li>
+  <li><a href="#structure">Codificación y estructura</a></li>
+  <li><a href="#upgrades">Estado y futuras mejoras</a></li>
+  <li><a href="#instalation">Instalación</a></li>
+  <li><a href="#license">License</a></li>
+</ol>
 
 
 
