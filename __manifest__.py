@@ -26,9 +26,9 @@
     'data': [
         'security/ir.model.access.csv',
         'views/contructions.xml',
-        'views/machinery.xml',
-        'views/materials.xml',
         'views/activities.xml',
+        'views/materials.xml',
+        'views/machinery.xml',
         'views/employees.xml'
     ],
     # only loaded in demonstration mode
