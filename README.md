@@ -56,7 +56,7 @@ Este repositorio tiene como carpeta raíz la propia carpeta del modulo, entonces
    
 ## License
 <div id="license"></div>
-Distributed under the MIT License. See [`LICENSE.txt`](./LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE.txt](./LICENSE) for more information.
 
 <p align="right">(<a href="#top">Ir al principio</a>)</p>
 
