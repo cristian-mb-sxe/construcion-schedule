@@ -56,7 +56,7 @@ Este repositorio tiene como carpeta raíz la propia carpeta del modulo, entonces
    
 ## License
 <div id="license"></div>
-Distributed under the MIT License. See <a href="https://github.com/cristian-mb-sxe/construction_schedule/blob/main/LICENSE">LICENSE</a> for more information.
+Distributed under the MIT License. See <a href="https://github.com/cristian-mb-sxe/construction_schedule/blob/main/LICENSE" target="_blank">LICENSE</a> for more information.
 
 <p align="right">(<a href="#top">Ir al principio</a>)</p>
 
